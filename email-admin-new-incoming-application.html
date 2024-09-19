@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rheinische Orchesterakadamie Mainz - Neue Bewerbung</title>
+
+    <style>
+      html,
+      body,
+      .email-wrap {
+        background: #fff;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        color: #212121;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .email-wrap {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .sub-section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .header {
+        display: flex;
+        padding: 16px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .list-element span.label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .list-element p {
+        font-weight: 500;
+      }
+
+      .message {
+        display: flex;
+        padding: 16px 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #cbefff;
+        color: #00445f;
+      }
+
+      .message-wrap {
+        font-weight: 600;
+        gap: 8px;
+        max-width: 400px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .icon {
+        display: flex;
+        margin-right: 2px;
+      }
+
+      pre {
+        white-space: pre-wrap; /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        font-family: "Work Sans", sans-serif;
+        color: #212121;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        margin: 0;
+      }
+
+      .message-container {
+        background: #f5f5f5;
+        height: auto;
+        padding: 16px 16px;
+        border-radius: 16px;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Song Myung", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      h3 {
+        font-size: 30px;
+        line-height: 150%;
+      }
+
+      h4 {
+        font-size: 22px;
+        line-height: 150%;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        margin-top: 16px;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 16px 0;
+      }
+
+      .gap-32 {
+        gap: 32px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        body,
+        .email-wrap {
+          background: #212121;
+        }
+
+        .message {
+          color: #cbefff;
+          background: #00445f;
+        }
+
+        body {
+          color: #fff;
+        }
+
+        #logo path {
+          fill: #ffffff;
+        }
+
+        pre {
+          color: #fff;
+        }
+
+        .message-container {
+          background: #151515;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrap">
+      <div class="header">
+        <svg
+          width="100"
+          height="75"
+          viewBox="0 0 100 75"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          id="logo"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.16939 31.6802C3.65621 31.6802 0 35.4133 0 40.0171V66.6351C0 71.2385 3.65621 74.972 8.16939 74.972H91.8186C96.3318 74.972 100 71.2388 100 66.6351V40.0171C100 35.4136 96.3321 31.6802 91.8186 31.6802H62.428C61.9456 32.9115 61.3727 34.0987 60.7126 35.2548C58.3131 39.4584 55.0507 42.8157 50.9237 45.3071C46.7967 47.7985 42.1092 49.0738 36.8762 49.1337C32.7751 49.1134 29.0922 48.2627 25.8157 46.6026C22.5392 44.9422 19.9423 42.594 18.0182 39.5372C16.5752 37.2446 15.6565 34.621 15.2711 31.6802H8.16939ZM21.953 31.6802C21.9459 31.9216 21.9291 32.1614 21.929 32.3999H22.001C22.0002 34.9095 22.4343 37.2511 23.3205 39.4173C24.2065 41.5837 25.5444 43.3399 27.3273 44.6833C29.1101 46.0267 31.3441 46.7186 34.0331 46.7585C36.8637 46.7264 39.3729 45.9439 41.5427 44.4194C43.7125 42.8946 45.5345 40.9234 47.013 38.4936C48.3174 36.3499 49.3299 34.0715 50.072 31.6802H21.953ZM6.238 43.4358H13.9395C15.8961 43.4295 17.4009 43.8502 18.4501 44.6953C19.4993 45.5404 20.0226 46.8563 20.0336 48.6298C20.019 49.5723 19.8328 50.3427 19.4578 50.945C19.0824 51.5476 18.6043 52.016 18.0422 52.3485C17.4798 52.6809 16.9143 52.9122 16.3388 53.0442V53.1282C16.8815 53.2661 17.3618 53.571 17.7663 54.0398C18.1708 54.509 18.5528 55.3942 18.9299 56.6908L20.6694 62.7006H15.3191L13.8796 57.2426C13.6231 56.3472 13.308 55.772 12.9199 55.5153C12.5317 55.2582 12.1187 55.1382 11.6963 55.1674H11.4203V62.7006H6.238V43.4358ZM58.2774 43.4358H63.9875L70.1176 62.7006H64.7673L63.7356 58.6221H58.0854L56.8378 62.7006H51.8714L58.2774 43.4358ZM73.3325 43.4358H80.9741L83.5413 55.5273H83.6012L86.4203 43.4358H93.87V62.7006H89.2274V48.078H89.1795L85.0408 62.7006H81.8018L77.9151 48.078H77.8551V62.7006H73.3325V43.4358ZM11.2044 47.1424V51.4728H12.7279C13.3002 51.4641 13.7903 51.2801 14.2035 50.909C14.6169 50.5378 14.8319 50.0276 14.8512 49.3976C14.8543 48.7229 14.6713 48.1784 14.3114 47.7662C13.9516 47.3539 13.4009 47.1537 12.644 47.1424H11.2044ZM61.0365 47.3583L58.9611 54.9275H62.7759L61.0964 47.3583H61.0365Z"
+            fill="#212121"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M42.1787 0C36.867 0.0702983 32.1777 1.41606 28.1192 4.0305C24.061 6.64465 20.8838 10.1066 18.5823 14.4186C16.2808 18.7306 15.1094 23.4699 15.0674 28.6333C15.0783 29.6856 15.1429 30.6999 15.2713 31.6802H21.9532C22.0191 29.4434 22.3799 27.0788 23.0448 24.5908C23.7812 21.8349 24.8673 19.2383 26.3198 16.7817C27.7726 14.3252 29.5796 12.3209 31.7301 10.772C33.8805 9.22274 36.3623 8.43112 39.1917 8.39687C41.9674 8.43351 44.2691 9.11809 46.0895 10.4481C47.9096 11.7784 49.2739 13.5316 50.1682 15.7141C51.0624 17.897 51.5021 20.2813 51.4997 22.8755C51.497 25.355 51.1161 27.9723 50.3601 30.7205C50.271 31.0444 50.1713 31.3607 50.0722 31.6802H62.4282C63.6997 28.4349 64.3462 24.9276 64.3836 21.1601C64.3484 16.7137 63.3862 12.9135 61.4925 9.76435C59.5988 6.61523 56.9976 4.20303 53.671 2.53106C50.3445 0.85909 46.5139 0.0151916 42.1787 0Z"
+            fill="#212121"
+          />
+        </svg>
+      </div>
+
+      <div class="message">
+        <div class="message-wrap">
+          <div class="text">Neue Bewerbung</div>
+        </div>
+      </div>
+
+      <div class="main">
+        <section>
+          <h2>ROAM 38 « The American Dream »</h2>
+          <p>Ein besonderes Konzert mit dem Klarinettisten Ivan Petrov.</p>
+        </section>
+
+        <section class="gap-32">
+          <h3>Zusammenfassung:</h3>
+
+          <div class="sub-section">
+            <h4>Mitgliedschaft</h4>
+
+            <div class="list-element">
+              <p>[user-roam-member-type]</p>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <h4>Kontaktinformationen</h4>
+
+            <div class="list-element">
+              <span class="label">Name</span>
+              <p>[user-name]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">E-Mail</span>
+              <p>[user-email]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">Geburtstag</span>
+              <p>[user-birthday]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">Adresse</span>
+              <p>[user-street], [user-plz], [user-city]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">Telefon / Mobil</span>
+              <p>[user-phone]</p>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <h4>Musikalische Erfahrung</h4>
+
+            <div class="list-element">
+              <span class="label">Instrument</span>
+              <p>[user-instrument]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label"
+                >Angaben zum Instrumentalunterricht/Dozent:innen,
+                Orchestererfahrung/Dirigent:innen</span
+              >
+              <div class="message-container">
+                <pre>[user-orchestra-experience]</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <h4>Teilnahme an Proben</h4>
+
+            <div class="list-element">
+              <span class="label"
+                >Ich werde am Projekt ROAM 37 #mahlermitsahler inklusive aller
+                Proben teilnehmen</span
+              >
+              <p>[user-all-rehearsal-radio]</p>
+            </div>
+
+            [conditional-user-will-miss-some-rehearsals]
+
+            <div class="list-element">
+              <span class="label"
+                >Ich werde voraussichtlich an folgenden Terminen fehlen
+                (Rücksprache mit dem Vorstand erforderlich)</span
+              >
+              <div class="message-container">
+                <pre>[user-missing-rehearsal-dates]</pre>
+              </div>
+            </div>
+
+            [/conditional-user-will-miss-some-rehearsals]
+
+            <div class="list-element">
+              <span class="label"
+                >Ich benötige an einem oder beiden Probewochenenden in Mainz
+                eine Übernachtungsgelegenheit (bitte genaue Angabe an welchen
+                Wochenenden eine Schlafmöglichkeit benötigt wird)</span
+              >
+              <p>[user-needs-overnight-accomodation]</p>
+            </div>
+
+            [conditional-user-needs-accomodation]
+
+            <div class="list-element">
+              <span class="label"
+                >An folgenden Wochenenden bräuchte ich eine
+                Übernachtungsmöglichkeit in Mainz</span
+              >
+              <div class="message-container">
+                <pre>[user-overnight-accomodation-days]</pre>
+              </div>
+            </div>
+
+            [/conditional-user-needs-accomodation]
+          </div>
+
+          <div class="sub-section">
+            <h4>Zahlungsinformationen</h4>
+
+            <div class="list-element">
+              <span class="label">Kursgebühr</span>
+              <p>[user-sepa-payment-options]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">Einmalige Spende (freiwillig)</span>
+              <p>[user-donation-quick]</p>
+            </div>
+
+            [conditional-user-wants-to-donate-free-amount]
+
+            <div class="list-element">
+              <span class="label"
+                >Einmalige Spende (freiwillig) - Wunschbetrag</span
+              >
+              <p>[user-donation-free-number] EUR</p>
+            </div>
+
+            [/conditional-user-wants-to-donate-free-amount]
+            [conditional-user-wants-to-become-member]
+
+            <div class="list-element">
+              <span class="label"
+                >Jährlicher Mitgliedsbeitrag Verein (nur bei
+                Vereinsbeitritt)</span
+              >
+              <p>[user-yearly-member-fee] EUR</p>
+            </div>
+
+            [/conditional-user-wants-to-become-member]
+
+            <h5>SEPA-Lastschrift</h5>
+
+            <div class="list-element">
+              <span class="label">Kontoinhaber</span>
+              <p>[user-acount-holder]</p>
+            </div>
+
+            <div class="list-element">
+              <span class="label">IBAN</span>
+              <p>[user-iban]</p>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <h4>Allgemeine Bestimmungen</h4>
+
+            [conditional-user-wants-to-become-member]
+            <h5>Mitgliedschaft (nur bei Vereinsbetritt)</h5>
+            <div class="list-element">
+              <p>[user-accept-member-fee]</p>
+            </div>
+
+            <div class="list-element">
+              <p>[user-accept-member-conditions]</p>
+            </div>
+
+            [/conditional-user-wants-to-become-member]
+
+            <h5>Akademie</h5>
+
+            <div class="list-element">
+              <p>[user-accept-roam-fee]</p>
+            </div>
+
+            <div class="list-element">
+              <p>[user-accept-internal-address-usage]</p>
+            </div>
+
+            <div class="list-element">
+              <p>[user-accept-roam-conditions]</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

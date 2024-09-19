@@ -1,0 +1,136 @@
+<h3>Mitgliedschaft</h3>
+
+[radio user-roam-member-type use_label_element default:1 "Ich bin kein
+Vereinsmitglied" "Ich bin Vereinsmitglied" "Ich möchte Vereinsmitglied werden"]
+
+<h3>Kontaktinformationen</h3>
+
+<label> Name [text* user-name autocomplete:name] </label>
+
+<label> E-Mail [email* user-email autocomplete:email] </label>
+
+[conditional conditional-user-roam-member]
+
+<label>
+  Geburtsdatum [text* user-birthday placeholder "TT.MM.YYYY (Beispiel:
+  01.01.2001)"]
+</label>
+
+<label> Straße [text* user-street autocomplete:address] </label>
+
+<label> PLZ [number* user-plz] </label>
+
+<label> Ort [text* user-city] </label>
+
+<label> Telefon / Mobil [tel* user-phone] </label>
+
+<h3>Musikalische Erfahrung</h3>
+
+<label> Instrument [text* user-instrument] </label>
+
+<label>
+  Angaben zum Instrumentalunterricht/Dozent:innen,
+  Orchestererfahrung/Dirigent:innen [textarea* user-orchestra-experience]
+</label>
+
+[/conditional]
+
+<h3>Teilnahme an Proben</h3>
+
+Ich werde am Projekt ROAM 38 « The American Dream » inklusive aller Proben
+teilnehmen [radio user-all-rehearsal-radio use_label_element default:1 "Ja"
+"Nein"] [conditional conditional-user-will-miss-some-rehearsals]
+
+<label>
+  Ich würde voraussichtlich an folgenden Terminen fehlen (Rücksprache mit dem
+  Vorstand erforderlich) [textarea user-missing-rehearsal-dates]
+</label>
+
+[/conditional] Ich benötige an einem oder beiden Probewochenenden in Mainz eine
+Übernachtungsgelegenheit (bitte genaue Angabe an welchen Wochenenden eine
+Schlafmöglichkeit benötigt wird) [radio user-needs-overnight-accomodation
+use_label_element default:2 "Ja" "Nein"] [conditional
+conditional-user-needs-accomodation]
+
+<label>
+  An folgenden Wochenenden bräuchte ich eine Übernachtungsmöglichkeit in Mainz
+  [textarea user-overnight-accomodation-days]
+</label>
+
+[/conditional]
+
+<h3>Zahlungsinformationen</h3>
+
+<h4>Akademie</h4>
+
+<label>
+  Kursgebühr [select* user-sepa-payment-options "Nichtmitglieder: 65 EUR"
+  "Nichtmitglieder (ermäßigt): 55 EUR" "Mitglieder: 40 EUR" "Mitglieder
+  (ermäßigt): 30 EUR"]
+</label>
+
+<p class="footnote">
+  Ermäßigter Betrag für SchülerInnen, Studierende, Auszubildende
+</p>
+
+<label>
+  Einmalige Spende (freiwillig) [select user-donation-quick include_blank "10
+  EUR" "20 EUR" "30 EUR" "Wunschbetrag"]
+</label>
+
+[conditional conditional-user-wants-to-donate-free-amount]
+<label>
+  Spendenbetrag [number user-donation-free-number placeholder "EUR"]
+</label>
+
+[/conditional] [conditional conditional-user-wants-to-become-member]
+
+<h4>Vereinsbeitritt</h4>
+
+<label>
+  Jährlicher Mitgliedsbeitrag [number* user-yearly-member-fee min:24 placeholder
+  "Mindestbeitrag: 24 EUR"]
+</label>
+
+<p class="footnote">
+  Trage deinen gewünschten Mitgliedsbeitrag ab 24 EUR / Jahr ein.
+</p>
+
+[/conditional]
+
+<h4>SEPA-Lastschrift</h4>
+
+<label> Kontoinhaber [text* user-acount-holder] </label>
+
+<label> IBAN [text* user-iban] </label>
+
+<h3 class="padding-top-bottom-16">Allgemeine Bestimmungen</h3>
+
+[conditional conditional-user-wants-to-become-member]
+
+<h4>Vereinsmitgliedschaft</h4>
+
+[checkbox user-accept-member-conditions use_label_element "Die Vereinssatzung in
+ihrer aktuellen Fassung erkenne ich vollinhaltlich an"]
+
+<p><a href="/vereinssatzung" target="_blank"> Vereinssatzung </a></p>
+
+[checkbox user-accept-member-fee use_label_element "Hiermit erlaube ich, den
+jährlichen Mitgliedsbeitrag per Lastschrift von meinem Konto abzubuchen "]
+[/conditional]
+
+<h4>Akademie</h4>
+
+[checkbox* user-accept-roam-fee use_label_element "Hiermit erlaube ich, den
+Teilnahmebeitrag und ggf. die freiwillige einmalige Spende per Lastschrift von
+meinem Konto abzubuchen"] [checkbox* user-accept-internal-address-usage
+use_label_element "Mit der Nutzung und Weitergabe meiner Adressdaten für
+orchester-interne Zwecke bin ich einverstanden"] [checkbox*
+user-accept-roam-conditions use_label_element "Die Teilnahmebedingungen erkenne
+ich als Bestandteil dieser Bewerbung an"]
+
+<p>
+  <a href="/teilnahmebedingungen" target="_blank"> Teilnahmebedingungen </a>
+</p>
+
+[submit "Senden"]
